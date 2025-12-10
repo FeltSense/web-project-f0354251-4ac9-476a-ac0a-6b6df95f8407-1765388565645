@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🎨 DESIGN CONTRACT - Brand Colors & Fonts */
+:root {
+  /* Typography */
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+  
+  /* Brand Colors - USE THESE! */
+  --brand-primary: theme('colors.indigo.600');
+  --brand-primary-hover: theme('colors.indigo.700');
+  --brand-secondary: theme('colors.slate.900');
+  --brand-accent: theme('colors.emerald.500');
+  --brand-primary-light: theme('colors.indigo.50');
+}
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* 🎨 DESIGN CONTRACT ENFORCED CLASSES */
+/* Use these in components for consistency! */
+.text-brand-primary { 
+  color: var(--brand-primary); 
+}
+
+.bg-brand-primary { 
+  background-color: var(--brand-primary); 
+}
+
+.bg-brand-primary-light { 
+  background-color: var(--brand-primary-light); 
+}
+
+.border-brand-primary { 
+  border-color: var(--brand-primary); 
+}
