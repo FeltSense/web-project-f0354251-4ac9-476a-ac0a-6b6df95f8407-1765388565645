@@ -103,7 +103,10 @@ export default function Footer() {
               <Link href="#" className="text-slate-500 hover:text-violet-400 text-sm transition-colors duration-300">
                 Terms of Service
               </Link>
-            </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }
