@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 
@@ -11,7 +12,7 @@ const headingFont = Plus_Jakarta_Sans({
   variable: '--font-heading'
 })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Curated Fashion Boutique',
   description: 'Fashion & Retail services'
 }
@@ -23,7 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${bodyFont.variable} ${headingFont.variable} font-sans antialiased`}>{children}</body>
+      <body className={`${bodyFont.variable} ${headingFont.variable} font-sans antialiased`}>
+        {children}
+      </body>
     </html>
   )
 }
